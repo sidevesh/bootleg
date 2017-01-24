@@ -1,10 +1,11 @@
 import * as types from '../constants/actionTypes';
 
 const initialState = {
-  //
+  accentColor: '#cc7f29',
+  theme: 'light'
 };
 
-export default function collectionState(state = initialState, action = {}) {
+export default function themeState(state = initialState, action = {}) {
   switch (action.type) {
     //case types.DEVICE_CONNECTED:
     //  return {

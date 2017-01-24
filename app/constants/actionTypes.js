@@ -1,0 +1,1 @@
+export const PANE_SELECTED = 'PANE_SELECTED';
