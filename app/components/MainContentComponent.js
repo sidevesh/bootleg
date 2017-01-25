@@ -1,3 +1,4 @@
+// @flow
 import React, { Component } from 'react';
 import { NavPane, NavPaneItem, Text } from 'react-desktop/windows';
 

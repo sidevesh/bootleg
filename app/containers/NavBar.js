@@ -1,3 +1,4 @@
+// @flow
 import { connect } from 'react-redux';
 import { callPaneSelect } from '../actions';
 import NavBarComponent from '../components/NavBarComponent';
