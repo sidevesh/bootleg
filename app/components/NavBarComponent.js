@@ -16,7 +16,7 @@ const renderIcon = (iconPath, theme) => {
   );
 }
 
-const renderItem = (title, iconPath, theme, selectedItem, onSelect) => {
+const renderItem = (i, title, iconPath, theme, selectedItem, onSelect) => {
   return (
     <NavPaneItem
       title={title}
@@ -26,9 +26,9 @@ const renderItem = (title, iconPath, theme, selectedItem, onSelect) => {
       selected={selectedItem === title}
       onSelect={() => onSelect(title) }
       padding="10px 20px"
-      push>
-      
-      <MainContent />
+      push
+      key={i} >
+        <MainContent />
     </NavPaneItem>
   );
 }
@@ -36,9 +36,9 @@ const renderItem = (title, iconPath, theme, selectedItem, onSelect) => {
 const NavBarComponent = ({paneItemsArray, color, theme, selectedPane, onPaneSelect}) => {
   return (
     <NavPane openLength={200} push color={color} theme={theme}>
-      {renderItem(paneItemsArray[0].name, paneItemsArray[0].iconPath, theme, selectedPane, onPaneSelect)}
-      {renderItem(paneItemsArray[1].name, paneItemsArray[1].iconPath, theme, selectedPane, onPaneSelect)}
-      {renderItem(paneItemsArray[2].name, paneItemsArray[2].iconPath, theme, selectedPane, onPaneSelect)}
+      {paneItemsArray.map(function(item, i){
+        return renderItem(i, item.name, item.iconPath, theme, selectedPane, onPaneSelect);
+      })}
     </NavPane>
   );
 }

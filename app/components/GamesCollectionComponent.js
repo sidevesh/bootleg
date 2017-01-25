@@ -6,17 +6,9 @@ import GridItemComponent from './GridItemComponent';
 const GamesCollectionComponent = ({collection, selected, onSelect}) => {
   return (
     <div className={styles.flexgrid}>
-      <GridItemComponent item={collection[0]} selected={selected} onSelectSelf={ () => {onSelect(0)} } />
-      <GridItemComponent item={collection[0]} selected={selected} onSelectSelf={ () => {onSelect(0)} } />
-      <GridItemComponent item={collection[0]} selected={selected} onSelectSelf={ () => {onSelect(0)} } />
-      <GridItemComponent item={collection[0]} selected={selected} onSelectSelf={ () => {onSelect(0)} } />
-      <GridItemComponent item={collection[0]} selected={selected} onSelectSelf={ () => {onSelect(0)} } />
-      <GridItemComponent item={collection[0]} selected={selected} onSelectSelf={ () => {onSelect(0)} } />
-      <GridItemComponent item={collection[0]} selected={selected} onSelectSelf={ () => {onSelect(0)} } />
-      <GridItemComponent item={collection[0]} selected={selected} onSelectSelf={ () => {onSelect(0)} } />
-      <GridItemComponent item={collection[0]} selected={selected} onSelectSelf={ () => {onSelect(0)} } />
-      <GridItemComponent item={collection[0]} selected={selected} onSelectSelf={ () => {onSelect(0)} } />
-      <GridItemComponent item={collection[0]} selected={selected} onSelectSelf={ () => {onSelect(0)} } />
+      {collection.map(function(game, i){
+        return <GridItemComponent item={game} selected={selected === i} onSelectSelf={ () => {onSelect(0)} } key={i} />;
+      })}
     </div>
   );
 }

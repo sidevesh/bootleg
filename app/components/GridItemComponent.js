@@ -5,7 +5,7 @@ import React from 'react';
 
 import { Label, View, Text } from 'react-desktop/windows';
 
-const GridItemComponent = ({item, selected, onSelectSelf}) => {
+const GridItemComponent = ({item, isSelected, onSelectSelf}) => {
   return (
     <View background={item.color}
       layout='vertical'

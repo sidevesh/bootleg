@@ -3,6 +3,17 @@ import * as types from '../constants/actionTypes';
 
 const initialState = {
   items:  [
+            {'name': 'Arkham Knight', 'desc': 'lorem ipsum dolor sit amet', image: 'http://www.mobygames.com/images/covers/l/307314-batman-arkham-knight-limited-edition-playstation-4-front-cover.jpg', 'color': '#363636'},
+            {'name': 'Arkham Knight', 'desc': 'lorem ipsum dolor sit amet', image: 'http://www.mobygames.com/images/covers/l/307314-batman-arkham-knight-limited-edition-playstation-4-front-cover.jpg', 'color': '#363636'},
+            {'name': 'Arkham Knight', 'desc': 'lorem ipsum dolor sit amet', image: 'http://www.mobygames.com/images/covers/l/307314-batman-arkham-knight-limited-edition-playstation-4-front-cover.jpg', 'color': '#363636'},
+            {'name': 'Arkham Knight', 'desc': 'lorem ipsum dolor sit amet', image: 'http://www.mobygames.com/images/covers/l/307314-batman-arkham-knight-limited-edition-playstation-4-front-cover.jpg', 'color': '#363636'},
+            {'name': 'Arkham Knight', 'desc': 'lorem ipsum dolor sit amet', image: 'http://www.mobygames.com/images/covers/l/307314-batman-arkham-knight-limited-edition-playstation-4-front-cover.jpg', 'color': '#363636'},
+            {'name': 'Arkham Knight', 'desc': 'lorem ipsum dolor sit amet', image: 'http://www.mobygames.com/images/covers/l/307314-batman-arkham-knight-limited-edition-playstation-4-front-cover.jpg', 'color': '#363636'},
+            {'name': 'Arkham Knight', 'desc': 'lorem ipsum dolor sit amet', image: 'http://www.mobygames.com/images/covers/l/307314-batman-arkham-knight-limited-edition-playstation-4-front-cover.jpg', 'color': '#363636'},
+            {'name': 'Arkham Knight', 'desc': 'lorem ipsum dolor sit amet', image: 'http://www.mobygames.com/images/covers/l/307314-batman-arkham-knight-limited-edition-playstation-4-front-cover.jpg', 'color': '#363636'},
+            {'name': 'Arkham Knight', 'desc': 'lorem ipsum dolor sit amet', image: 'http://www.mobygames.com/images/covers/l/307314-batman-arkham-knight-limited-edition-playstation-4-front-cover.jpg', 'color': '#363636'},
+            {'name': 'Arkham Knight', 'desc': 'lorem ipsum dolor sit amet', image: 'http://www.mobygames.com/images/covers/l/307314-batman-arkham-knight-limited-edition-playstation-4-front-cover.jpg', 'color': '#363636'},
+            {'name': 'Arkham Knight', 'desc': 'lorem ipsum dolor sit amet', image: 'http://www.mobygames.com/images/covers/l/307314-batman-arkham-knight-limited-edition-playstation-4-front-cover.jpg', 'color': '#363636'},
             {'name': 'Arkham Knight', 'desc': 'lorem ipsum dolor sit amet', image: 'http://www.mobygames.com/images/covers/l/307314-batman-arkham-knight-limited-edition-playstation-4-front-cover.jpg', 'color': '#363636'}
           ],
   selectedItem: -1,
