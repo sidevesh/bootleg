@@ -3,17 +3,25 @@ import * as types from '../constants/actionTypes';
 
 const initialState = {
   accentColor: '#cc7f29',
-  theme: 'light'
+  theme: 'light',
+  windowWidth: -1,
+  windowHeight: -1,
+  navPaneOpen: true
 };
 
 export default function themeState(state = initialState, action = {}) {
   switch (action.type) {
-    //case types.DEVICE_CONNECTED:
-    //  return {
-    //    ...state,
-    //    device_id: action.device_id,
-    //    device_ip: action.device_ip,
-    //  };
+    case types.WINDOW_RESIZE:
+      return {
+        ...state,
+        windowWidth: action.width,
+        windowHeight: action.height,
+      };
+    case types.NAV_PANE_TOGGLE:
+      return {
+        ...state,
+        navPaneOpen: !state.navPaneOpen
+      };
     default:
       return state;
   }

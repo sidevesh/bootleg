@@ -5,7 +5,10 @@ import MainContentComponent from '../components/MainContentComponent';
 
 const mapStateToProps = (state) => {
   return {
-    selectedPane: state.navPaneState.selectedPane
+    selectedPane: state.navPaneState.selectedPane,
+    windowWidth: state.themeState.windowWidth,
+    windowHeight: state.themeState.windowHeight,
+    navPaneOpen: state.themeState.navPaneOpen
   }
 }
 

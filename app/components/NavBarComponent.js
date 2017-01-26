@@ -33,9 +33,9 @@ const renderItem = (i, title, iconPath, theme, selectedItem, onSelect) => {
   );
 }
 
-const NavBarComponent = ({paneItemsArray, color, theme, selectedPane, onPaneSelect}) => {
+const NavBarComponent = ({paneItemsArray, color, theme, selectedPane, onPaneSelect, onNavPaneToggle}) => {
   return (
-    <NavPane openLength={200} push color={color} theme={theme}>
+    <NavPane openLength={200} push color={color} theme={theme} defaultIsPaneExpanded={true} onPaneToggle={() => {onNavPaneToggle()}}>
       {paneItemsArray.map(function(item, i){
         return renderItem(i, item.name, item.iconPath, theme, selectedPane, onPaneSelect);
       })}

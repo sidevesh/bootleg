@@ -1,6 +1,6 @@
 // @flow
 import { connect } from 'react-redux';
-import { callPaneSelect } from '../actions';
+import { callPaneSelect, callNavPaneToggle } from '../actions';
 import NavBarComponent from '../components/NavBarComponent';
 
 
@@ -17,6 +17,9 @@ const mapDispatchToProps = (dispatch) => {
   return {
     onPaneSelect: (name) => {
       dispatch(callPaneSelect(name));
+    },
+    onNavPaneToggle: (name) => {
+      dispatch(callNavPaneToggle());
     }
   }
 }

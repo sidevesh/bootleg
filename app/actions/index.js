@@ -17,3 +17,13 @@ export const callGameAdd = (name, desc, image, color) => ({
   image: image,
   color: color
 })
+
+export const callWindowResize = (width, height) => ({
+  type: types.WINDOW_RESIZE,
+  width: width,
+  height: height
+})
+
+export const callNavPaneToggle = () => ({
+  type: types.NAV_PANE_TOGGLE
+})
