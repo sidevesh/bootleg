@@ -10,6 +10,10 @@ export const callGameSelect = (index) => ({
   index: index
 })
 
+export const callGameDeSelect = (index) => ({
+  type: types.GAME_DESELECTED
+})
+
 export const callGameAdd = (name, desc, image, color) => ({
   type: types.GAME_ADDED,
   name: name,

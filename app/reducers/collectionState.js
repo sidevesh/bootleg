@@ -26,6 +26,11 @@ export default function collectionState(state = initialState, action = {}) {
         ...state,
         selectedItem: action.index
       };
+    case types.GAME_DESELECTED:
+      return {
+        ...state,
+        selectedItem: -1
+      };
     case types.GAME_ADDED:
       return {
         ...state,
