@@ -7,7 +7,8 @@ import { callGameSelect } from '../actions';
 const mapStateToProps = (state) => {
   return {
     collection: state.collectionState.items,
-    selected: state.collectionState.selectedItem
+    selectedItem: state.collectionState.selectedItem,
+    accentColor: state.themeState.accentColor
   }
 }
 
