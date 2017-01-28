@@ -5,7 +5,7 @@ import React from 'react';
 
 import { Label, View, Text } from 'react-desktop/windows';
 
-const GridItemComponent = ({item, isSelected, accentColor, onSelectSelf, onDeSelectSelf}) => {
+const GridItemComponent = ({item, isSelected, accentColor, onSelectSelf, onDeSelectSelf, onShowGame}) => {
   let highlightBorder = (
     <div style={{"width":"190px","height":"290px","border":"5px solid "+accentColor,"position": "relative" ,"bottom":"300px" }}>
     </div>
@@ -15,7 +15,7 @@ const GridItemComponent = ({item, isSelected, accentColor, onSelectSelf, onDeSel
     </div>
   );
   return (
-    <div style={{"width":"200px","height":"300px", "margin": "5px" }} onMouseEnter={() => { onSelectSelf()} } onMouseLeave={ () => {onDeSelectSelf()} }>
+    <div style={{"width":"200px","height":"300px", "margin": "5px" }} onClick={() => {onShowGame()}} onMouseEnter={() => { onSelectSelf()} } onMouseLeave={ () => {onDeSelectSelf()} }>
       <View background={item.color}
         layout='vertical'
         width='200px'

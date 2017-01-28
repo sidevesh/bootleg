@@ -1,6 +1,9 @@
 // @flow
 export const PANE_SELECTED = 'PANE_SELECTED';
 
+export const GAME_SHOW_NAV = 'GAME_SHOW_NAV';
+export const GAME_NOSHOW_NAV = 'GAME_NOSHOW_NAV';
+
 export const GAME_SELECTED = 'GAME_SELECTED';
 export const GAME_DESELECTED = 'GAME_DESELECTED';
 

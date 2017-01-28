@@ -1,11 +1,16 @@
 // @flow
 import React, { Component } from 'react';
-import GamesCollection from './GamesCollection';
+import { connect } from 'react-redux';
+import GamesLibraryPageComponent from '../components/GamesLibraryPageComponent';
 
-export default class GamesLibraryPage extends Component {
-  render() {
-    return (
-      <GamesCollection />
-    );
+const mapStateToProps = (state) => {
+  return {
+    gameShowOn: state.navPaneState.gameShowOn
   }
 }
+
+const GamesLibraryPage = connect(
+  mapStateToProps
+)(GamesLibraryPageComponent)
+
+export default GamesLibraryPage;

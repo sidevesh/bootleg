@@ -1,6 +1,6 @@
 // @flow
 import React, { Component } from 'react';
-import { NavPane, NavPaneItem, Text, View } from 'react-desktop/windows';
+import { View } from 'react-desktop/windows';
 
 import GamesLibraryPage from '../containers/GamesLibraryPage';
 import AddGamePage from '../containers/AddGamePage';

@@ -31,3 +31,12 @@ export const callWindowResize = (width, height) => ({
 export const callNavPaneToggle = () => ({
   type: types.NAV_PANE_TOGGLE
 })
+
+export const callGameShowNav = (gameno) => ({
+  type: types.GAME_SHOW_NAV,
+  gameno: gameno
+})
+
+export const callGameNoShowNav = () => ({
+  type: types.GAME_NOSHOW_NAV
+})
